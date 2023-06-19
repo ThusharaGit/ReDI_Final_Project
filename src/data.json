@@ -1,0 +1,135 @@
+{
+    "photos": [
+             "https://ik.imagekit.io/frd2fxkds6/picture_elephant.png?updatedAt=1686828602167",
+             "https://ik.imagekit.io/frd2fxkds6/picture_turtle.png?updatedAt=1686828602215",
+             "https://ik.imagekit.io/frd2fxkds6/picture_lemur.png?updatedAt=1686828602205",
+             "https://ik.imagekit.io/frd2fxkds6/picture_tiger.png?updatedAt=1686828602152",
+             "https://ik.imagekit.io/frd2fxkds6/picture_giraffe.png?updatedAt=1686828602127",
+             "https://ik.imagekit.io/frd2fxkds6/picture_pig.png?updatedAt=1686828602130",
+             "https://ik.imagekit.io/frd2fxkds6/picture_crocodile.png?updatedAt=1686828602083",
+             "https://ik.imagekit.io/frd2fxkds6/picture_cat.png?updatedAt=1686828602066",
+             "https://ik.imagekit.io/frd2fxkds6/picture_chameleon.png?updatedAt=1686826033278",
+             "https://ik.imagekit.io/frd2fxkds6/picture_snake.png?updatedAt=1686826033179"
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Birthday",
+            "quotes": ["The whole world echoes when I sing you Happy Birthday!!!",
+                "Everyone from deep down the ocean wished you Happy Birthday!!!",
+                "I have the biggest surprise for your birthday !!!",
+                "Here comes the cutest invitee of your birthday party !!!",
+                "Mmm.... I smell a yummy birthday Cake !!!"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Christmas",
+            "quotes": ["Hey there!!!, Santa is at your Door Step!",
+                "It's time to listen Christmas gingles !!!",
+                "I have the biggest surprise for your on Christmas day !!!",
+                "Here comes the cutest invitee of your Christmas party !!!",
+                "Mmm.... I smell a yummy Christmas Cake !!!"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "New Year",
+            "quotes": ["The whole world echoes when I sing you Happy New Year!!!",
+                "Everyone from deep down the ocean wished you Happy New Year!!!",
+                "I have the biggest surprise for you on the New Year Day !!!",
+                "Here comes the cutest invitee of your New Year party !!!",
+                "Mmm.... I smell a yummy New Year Cake !!!"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Congratulations",
+            "quotes": ["The whole world echoes when I sing you Congratulations!!!",
+                "Everyone from deep down the ocean congratulates you!!!",
+                "Congratulations!!! Let's celebrate this day!!!",
+                "Here comes the cutest invitee to congratulate on your party !!!",
+                "Congratulations!!!You've won the whole world !!!"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Valentine's Day",
+            "quotes": ["The whole world echoes when I sing you Happy Valentine's day!!!",
+                "Everyone from deep down the ocean wished you Happy Valentine's day!!!",
+                "I have the biggest surprise for the Valentine's day !!!",
+                "Here comes the cutest invitee of your Valentine's party !!!",
+                "Mmm.... I smell a yummy Valentine Cake !!!"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Wedding Anniversary",
+            "quotes": ["The whole world echoes when I sing you Happy Anniversary!!!",
+                "Everyone from deep down the ocean wished you a Happy Anniversary!!!",
+                "I have the biggest surprise for your Anniversary !!!",
+                "Here comes the cutest invitee of your Anniversary party !!!",
+                "Mmm.... I smell a yummy Anniversary Cake !!!"
+            ]
+        }
+         ],
+    "payments": [
+        "payPal","creditCard","applePay","debitCard"
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "pic": "https://ik.imagekit.io/frd2fxkds6/picture_chameleon.png?updatedAt=1686826033278",
+            "bgColor": "red",
+            "textColor": "white",
+            "message": "user enter whaterver",
+            "quote":  "Congratulations!!!You've won the whole world !!!",
+            "sender": "ann",
+            "receiver": "Marcus",
+            "payment": "payPal",
+            "amount": 44
+        },
+        {
+            "id": 2,
+            "pic": "https://ik.imagekit.io/frd2fxkds6/picture_crocodile.png?updatedAt=1686828602083",
+            "bgColor": "green",
+            "textColor": "yellow",
+            "message": "Hello and welcome",
+            "quote": "Hey there!!!, Santa is at your Door Step!",
+            "sender": "John",
+            "receiver": "Carla",
+            "payment": "creditCard",
+            "amount": 44
+        },
+        {
+            "id": 3,
+            "pic": "https://ik.imagekit.io/frd2fxkds6/picture_crocodile.png?updatedAt=1686828602083",
+            "bgColor": "salmon",
+            "textColor": "black",
+            "message": "Hey there",
+            "quote": "Here comes the cutest invitee of your birthday party !!!",
+            "sender": "Jonas",
+            "receiver": "Cate",
+            "payment": "debitCard",
+            "amount": 44
+        }
+    ],
+    "admin": {
+        "email": "thushara.weeraparakrama@gmail.com",
+        "password": "abcd1234"
+    },
+    "reviews": [
+        {
+            "id": 1,
+            "body": "I really like th service in this app."
+        },
+        {
+            "id": 2,
+            "body": "I don't like the colours."
+        },
+        {
+            "id": 3,
+            "body": "It's simple and nice."
+        }
+    ]
+}

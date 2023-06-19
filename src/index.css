@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.allPageLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 .pageHeadings{
     font-size: 2em;
+    text-align: center;
 }

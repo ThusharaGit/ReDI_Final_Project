@@ -9,7 +9,7 @@ function Pictures() {
     const prev = '/categories'
     const next = '/colours'
     return (
-        <div>
+        <div className='allPageLayout'>
             
                 <h1 className='pageHeadings'>Select The Picture</h1>
                 <Roadmap pageNo = {pageNo}/>

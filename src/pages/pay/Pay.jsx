@@ -9,7 +9,7 @@ function Pay() {
     const prev = '/message'
     const next = '/thankyou'
   return (
-    <div>
+    <div className='allPageLayout'>
         <h1 className='pageHeadings'>Preview Your Card</h1>
             <Roadmap pageNo = {pageNo} />
             <PrevNext prev={prev} next={next} />

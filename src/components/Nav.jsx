@@ -28,7 +28,7 @@ function Nav() {
     </div>
     <a className="btn btn-ghost normal-case text-xl">Wald Cards</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li><a>About</a></li>
       <li tabIndex={0}>

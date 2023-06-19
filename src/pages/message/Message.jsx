@@ -10,7 +10,7 @@ function Message() {
     const prev = '/colours'
     const next = '/pay'
   return (
-    <div>
+    <div className='allPageLayout'>
     <h1 className='pageHeadings'>Write Your Message Here</h1>
             <Roadmap pageNo= {pageNo}/>
             <PrevNext prev={prev} next={next} />

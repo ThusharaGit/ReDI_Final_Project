@@ -11,6 +11,7 @@ import Colours from './pages/colours/Colours';
 import Message from './pages/message/Message';
 import Pay from './pages/pay/Pay';
 import Thankyou from './pages/thankyou/Thankyou';
+import data from './data.json'
 
 
 
@@ -21,7 +22,7 @@ function App() {
       <Nav />
       <Routes>
        <Route path='/' element={<Home/>}/>
-       <Route path='/categories' element={<Categories/>}/>
+       <Route path='/categories' element={<Categories data = {data}/>}/>
        <Route path='/pictures' element={<Pictures/>}/>
        <Route path='/colours' element={<Colours/>}/>
        <Route path='/message' element={<Message/>}/>

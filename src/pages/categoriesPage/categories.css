@@ -1,0 +1,53 @@
+.categoriesCardsDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    
+
+}
+.card{
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+}
+
+.cardQuotesDiv{
+    height: 750px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+    
+    
+}
+.cardBg{
+    height: 240px;
+    width:280px;
+    background-color: rgb(101, 104, 104);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.cardPrev {
+    height: 200px;
+    width:200px;
+    background-color: white;
+    border: 2px solid black;
+}
+.quote{
+    background-color: rgb(138, 142, 143);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}

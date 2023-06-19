@@ -9,7 +9,7 @@ function Colours() {
     const prev = '/pictures'
     const next = '/message'
     return (
-        <div>
+        <div className='allPageLayout'>
             <h1 className='pageHeadings'>Add Colours For Your Card</h1>
             <Roadmap pageNo = {pageNo} />
             <PrevNext prev={prev} next={next} />

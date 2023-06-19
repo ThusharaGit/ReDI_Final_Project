@@ -1,11 +1,17 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 
-function PrevNext() {
+function PrevNext({prev, next}) {
+    const navigate = useNavigate()
     return (
-        <div>
+        <div style={{textAlign:'center'}}>
             <div style={{margin: '20px'}} className="join">
-                <button className="join-item btn">Previous</button>
-                <button className="join-item btn btn-active">Next</button>
+                <button onClick={() => {
+                    navigate(prev)
+                }} className="join-item btn">Previous</button>
+                <button onClick={() => {
+                    navigate(next)
+                }}className="join-item btn btn-active">Next</button>
                 
             </div>
         </div>

@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.pageHeadings{
+    font-size: 2em;
+}

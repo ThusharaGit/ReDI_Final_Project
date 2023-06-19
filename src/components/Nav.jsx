@@ -1,9 +1,11 @@
 import React from 'react'
-import Roadmap from './Roadmap'
+import {useNavigate} from 'react-router-dom'
 
 
 
 function Nav() {
+  const navigate = useNavigate()
+
   return (
     <div>
         <div className="navbar bg-primary text-primary-content navGradient">
@@ -42,7 +44,9 @@ function Nav() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <button onClick={() => {
+      navigate('/')
+    }} className="btn">Home</button>
   </div>
 </div>
 

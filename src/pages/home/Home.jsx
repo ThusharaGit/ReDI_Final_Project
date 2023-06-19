@@ -1,7 +1,10 @@
 import React from 'react'
 import Roadmap from '../../components/Roadmap'
+import {useNavigate} from 'react-router-dom'
 
 function Home() {
+   const navigate = useNavigate()
+
   return (
     <div className='grow'>
         <main>
@@ -20,7 +23,10 @@ function Home() {
                 <ion-icon name="heart"></ion-icon>
                 <ion-icon name="heart"></ion-icon>
                 </div>
-              <button style={{margin:'50px'}} className="btn btn-primary">Let's Start</button>
+              <button onClick={() => {
+                navigate('/categories')
+              }} style={{margin:'50px'}} className="btn btn-primary">Let's Start</button>
+
               <Roadmap/>
               
             </div>

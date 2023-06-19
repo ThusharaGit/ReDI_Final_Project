@@ -1,9 +1,11 @@
 import React from 'react'
 
+
+
 function Nav() {
   return (
     <div>
-        <div className="navbar bg-neutral text-neutral-content">
+        <div className="navbar bg-primary text-primary-content navGradient">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,7 +23,7 @@ function Nav() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a className="btn btn-ghost normal-case text-xl">Wald Cards</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

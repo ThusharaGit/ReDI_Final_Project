@@ -9,7 +9,7 @@ function Thankyou() {
     const next = '/thankyou'
   return (
     <div>
-        <h1 className='pageHeadings'>Thank You for Perchasing A Waldcard</h1>
+        <h1 className='pageHeadings'>Thank You for Purchasing A Waldcard</h1>
             
             <PrevNext prev={prev} next={next} />
     </div>

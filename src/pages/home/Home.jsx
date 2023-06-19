@@ -1,12 +1,16 @@
 import React from 'react'
+import {useState} from 'react'
 import Roadmap from '../../components/Roadmap'
 import {useNavigate} from 'react-router-dom'
 
 function Home() {
    const navigate = useNavigate()
+   const [pageNo,setPageNo] = useState(1)
+   
 
   return (
     <div className='grow'>
+
         <main>
         <div className="hero min-h-screen bg-base-200 mainBcGround">
           <div className="hero-content text-center">
@@ -27,12 +31,13 @@ function Home() {
                 navigate('/categories')
               }} style={{margin:'50px'}} className="btn btn-primary">Let's Start</button>
 
-              <Roadmap/>
+              <Roadmap pageNo = {pageNo}/>
               
             </div>
           </div>
         </div>
       </main>
+
     </div>
   )
 }

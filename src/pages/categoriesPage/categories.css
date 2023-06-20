@@ -90,8 +90,8 @@
 @media only screen and (min-width: 768px) {
     
     .cardQuotesDiv{
-        height: 330px;
-        width: 770px;
+        height: 380px;
+        width: 730px;
         flex-direction: row;
     } 
     .quote{
@@ -107,6 +107,11 @@
 @media only screen and (min-width: 992px) {
     .cardQuotesDiv{ 
         width: 980px;
+    } 
+
+    .cardQuotesDiv{ 
+        width: 770px;
+        
     } 
 
 }

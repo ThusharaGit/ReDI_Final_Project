@@ -12,8 +12,14 @@ function Pictures() {
         <div className='allPageLayout'>
             
                 <h1 className='pageHeadings'>Select The Picture</h1>
+                <div className='cardImagePrev' >
+                    <h1>Wish</h1>
+                </div>
+                
                 <Roadmap pageNo = {pageNo}/>
                 <PrevNext prev={prev} next={next} />
+
+                
           
         </div>
     )

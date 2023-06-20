@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function CategoryQuotes({ quotes, setQuotes }) {
 
-    const [wish, setWish] = useState("")
+     const [wish, setWish] = useState("")
 
     return (
         <div>

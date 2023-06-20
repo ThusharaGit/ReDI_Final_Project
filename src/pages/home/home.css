@@ -1,0 +1,13 @@
+
+.thumbNail{
+    height: 200px;
+
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/ReDIThumbnail.png?updatedAt=1687250643323);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 20px;
+     
+
+}

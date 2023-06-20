@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css'
 import {useState} from 'react'
 import Roadmap from '../../components/Roadmap'
 import {useNavigate} from 'react-router-dom'
@@ -14,8 +15,9 @@ function Home() {
         <main>
         <div className="hero min-h-screen bg-base-200 mainBcGround">
           <div className="hero-content text-center">
-            <div className="max-w-md">
-              <h1 style={{marginTop:'65px'}}  className="text-5xl font-bold">Hello there</h1>
+            <div className="max-w-max-xl">
+              <div className='thumbNail'></div>
+              <h1 style={{marginTop:'1px'}}  className="text-5xl font-bold">Hello there</h1>
               <p className="py-6">Are you interested in greeting in a very special way to your loved ones? <br />
                 Here's an Idea for you.... <br />
                 A customized greeting card can make the special day unforgettable....
@@ -29,7 +31,7 @@ function Home() {
                 </div>
               <button onClick={() => {
                 navigate('/categories')
-              }} style={{margin:'50px'}} className="btn btn-primary">Let's Start</button>
+              }} style={{margin:'20px'}} className="btn btn-primary">Let's Start</button>
 
               <Roadmap pageNo = {pageNo}/>
               

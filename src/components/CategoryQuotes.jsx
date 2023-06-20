@@ -3,12 +3,12 @@ import React from 'react'
 function CategoryQuotes({ quotes, setQuotes }) {
     return (
         <div>
-            <div className="card lg:card-side bg-base-100 shadow-xl cardQuotesDiv">
-                <div className='cardBg'>
+            <div className="cardQuotesDiv">
+               
                     <div className='cardPrev'></div>
-                </div>
-                <div className="card-body">
-                    <h2 className="card-title">Select The Quote For The Card</h2>
+             
+                <div className="quotesDivBody">
+                    <h2 className="card-title">Select The Quote</h2>
                     {
                         quotes.map(quote => <p className='quote'>{quote}</p>)
                     }

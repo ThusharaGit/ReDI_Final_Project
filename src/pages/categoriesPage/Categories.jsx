@@ -20,17 +20,16 @@ function Categories({ data }) {
         <div className='allPageLayout'>
             <h1 className='pageHeadings'>Select Your Card Category</h1>
 
-            { quotes.length > 0 && <CategoryQuotes quotes = {quotes}  setQuotes= {setQuotes} />}
-
+            {quotes.length > 0 && <CategoryQuotes quotes={quotes} setQuotes={setQuotes} />}
             <div className='categoriesCardsDiv'>
-
                 {
                     data.categories.map(category => <CategoryCard key={category.id} category={category} setQuotes={setQuotes} />)
                 }
             </div>
 
+
             <Roadmap pageNo={pageNo} />
-            <PrevNext prev={prev} next={next} />
+            <PrevNext prev={prev} next={next} pageNo = {pageNo} />
         </div>
     )
 }

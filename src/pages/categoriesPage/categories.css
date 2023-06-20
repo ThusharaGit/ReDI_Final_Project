@@ -7,6 +7,7 @@
     justify-items: center;
     width: 100vw;
     
+    
 
 }
 .card{
@@ -16,38 +17,72 @@
 }
 
 .cardQuotesDiv{
-    height: 750px;
+    height: 730px;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(172, 170, 170);
+    
+    
+    
     
     
     
 }
-.cardBg{
-    height: 240px;
-    width:280px;
-    background-color: rgb(101, 104, 104);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
+
 .cardPrev {
-    height: 200px;
-    width:200px;
+    height: 250px;
+    width:250px;
     background-color: white;
     border: 2px solid black;
 }
 .quote{
     background-color: rgb(138, 142, 143);
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     color: white;
 }
+.quotesDivBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 5px;
+    padding: 15px;
+    
+}
+
+/* css breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .cardQuotesDiv{
+        height: 330px;
+        width: 770px;
+        flex-direction: row;
+    } 
+    .quote{
+        width: 450px;
+    }   
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -26,7 +26,7 @@ function Nav() {
         <li><a>Photo Gallery</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Wald Cards</a>
+    <a style={{fontSize:'1.5em'}} className="btn btn-ghost normal-case text-xl">Wald Cards</a>
   </div>
   <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -46,7 +46,7 @@ function Nav() {
   <div className="navbar-end">
     <button onClick={() => {
       navigate('/')
-    }} className="btn">Home</button>
+    }} className="btn homeBtn"><ion-icon style= {{fontSize:'2em'}} name="home"></ion-icon></button>
   </div>
 </div>
 

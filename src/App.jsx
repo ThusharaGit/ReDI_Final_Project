@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/categories' element={<Categories data={data} wish={wish} setWish={setWish} />} />
-        <Route path='/pictures' element={<Pictures wish={wish} />} />
+        <Route path='/pictures' element={<Pictures data={data} wish={wish} />} />
         <Route path='/colours' element={<Colours />} />
         <Route path='/message' element={<Message />} />
         <Route path='/pay' element={<Pay />} />

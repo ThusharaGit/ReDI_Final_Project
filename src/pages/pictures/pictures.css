@@ -6,3 +6,26 @@
     padding: 10px;
     margin: 10px;
 }
+.pictureDiv{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(225, 236, 236);
+    border-radius: 10px;
+}
+.pictureDiv:hover{
+    background-color: rgb(236, 225, 230);
+    box-shadow: 5px 5px 20px rgb(88, 87, 87);
+}
+.selectedPicDiv{
+    height: 220px;
+    width: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

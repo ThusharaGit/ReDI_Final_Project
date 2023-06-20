@@ -9,7 +9,7 @@ import CategoryQuotes from '../../components/CategoryQuotes'
 
 
 
-function Categories({ data }) {
+function Categories({ data, wish, setWish }) {
     const [pageNo, setPageNo] = useState(2)
     const [quotes, setQuotes] = useState([])
 
@@ -20,7 +20,7 @@ function Categories({ data }) {
         <div className='allPageLayout'>
             <h1 className='pageHeadings'>Select Your Card Category</h1>
 
-            {quotes.length > 0 && <CategoryQuotes quotes={quotes} setQuotes={setQuotes} />}
+            {quotes.length > 0 && <CategoryQuotes quotes={quotes} setQuotes={setQuotes} wish = {wish} setWish = {setWish} />}
             <div className='categoriesCardsDiv'>
                 {
                     data.categories.map(category => <CategoryCard key={category.id} category={category} setQuotes={setQuotes} />)

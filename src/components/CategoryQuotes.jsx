@@ -2,9 +2,9 @@ import React from 'react'
 import Quote from './Quote'
 import { useState } from 'react'
 
-function CategoryQuotes({ quotes, setQuotes }) {
+function CategoryQuotes({ quotes, setQuotes ,wish ,setWish }) {
 
-     const [wish, setWish] = useState("")
+     //const [wish, setWish] = useState("")
 
     return (
         <div>

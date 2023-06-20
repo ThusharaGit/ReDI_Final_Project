@@ -5,9 +5,9 @@ import Roadmap from '../../components/Roadmap'
 import {useState} from 'react'
 
 
-function Pictures({data, wish}) {
+function Pictures({data, wish, image, setImage}) {
     const [pageNo,setPageNo] = useState(3)
-    const [image,setImage] = useState("")
+    // const [image,setImage] = useState("")
 
     const prev = '/categories'
     const next = '/colours'

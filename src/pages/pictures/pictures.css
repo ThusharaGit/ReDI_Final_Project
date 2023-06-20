@@ -21,8 +21,8 @@
     box-shadow: 5px 5px 20px rgb(88, 87, 87);
 }
 .selectedPicDiv{
-    height: 220px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -19,6 +19,7 @@ import { useState } from 'react'
 function App() {
 
   const [wish, setWish] = useState("")
+  const [image,setImage] = useState("")
 
   return (
     <div className="App min-h-screen">
@@ -26,8 +27,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/categories' element={<Categories data={data} wish={wish} setWish={setWish} />} />
-        <Route path='/pictures' element={<Pictures data={data} wish={wish} />} />
-        <Route path='/colours' element={<Colours />} />
+        <Route path='/pictures' element={<Pictures data={data} wish={wish} image={image} setImage={setImage} />} />
+        <Route path='/colours' element={<Colours wish={wish} image={image} />} />
         <Route path='/message' element={<Message />} />
         <Route path='/pay' element={<Pay />} />
         <Route path='/thankyou' element={<Thankyou />} />

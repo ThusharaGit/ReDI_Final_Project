@@ -20,7 +20,41 @@
     background-color: transparent;
     border: none;
     color: white;
+    box-shadow: 2px 2px 20px black;
+}
+.homeBtn:hover {
+    background-color: transparent;
+    background-color: rgb(241, 148, 179);
+    
 }
 .invisible{
     display: none;
 }
+.logoDiv{
+    height: 60px;
+    width: 60px;
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/Rectangle_2.png?updatedAt=1687335811843);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cardPrev {
+    height: 280px;
+    width:280px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgb(86, 88, 88);
+}
+
+ .selectedPicDiv{
+    height: 220px;
+    width: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+   
+    
+} 

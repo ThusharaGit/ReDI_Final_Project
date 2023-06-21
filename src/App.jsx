@@ -11,12 +11,29 @@ import Colours from './pages/colours/Colours';
 import Message from './pages/message/Message';
 import Pay from './pages/pay/Pay';
 import Thankyou from './pages/thankyou/Thankyou';
-import data from './data.json'
-import { useState } from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
+
 
 
 
 function App() {
+  const [orders, setOrders] = useState("")
+  const [categories, setCategories] = useState("")
+  const [pictures, setPictures] = useState("")
+  const [theme, setTheme] = useState("")
+
+  useEffect(() => {
+    //API Code goes here
+    axios("https://thushara-render.onrender.com/orders").then(i => setOrders(i.data)).catch(i => console.log(i))
+    axios("https://thushara-render.onrender.com/categories").then(i => setCategories(i.data)).catch(i => console.log(i))
+    axios("https://thushara-render.onrender.com/photos").then(i => setPictures(i.data)).catch(i => console.log(i))
+
+  },[])
+  
+
+
 
   const [wish, setWish] = useState("")
   const [image,setImage] = useState("")
@@ -24,10 +41,14 @@ function App() {
   return (
     <div className="App min-h-screen">
       <Nav />
+
+     {/* {orders && orders.map(i => <p>{i.quote}</p> )}  */}
+
+
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/categories' element={<Categories data={data} wish={wish} setWish={setWish} />} />
-        <Route path='/pictures' element={<Pictures data={data} wish={wish} image={image} setImage={setImage} />} />
+        <Route path='/categories' element={<Categories categories={categories} wish={wish} setWish={setWish} theme= {theme} setTheme={setTheme}/>} />
+        <Route path='/pictures' element={<Pictures pictures={pictures} wish={wish} image={image} setImage={setImage} />} />
         <Route path='/colours' element={<Colours wish={wish} image={image} />} />
         <Route path='/message' element={<Message />} />
         <Route path='/pay' element={<Pay />} />

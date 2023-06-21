@@ -1,7 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 
-function CategoryCard({ category, setQuotes }) {
+function CategoryCard({ category, setQuotes, setTheme }) {
+
+    
+
+    
 
     return (
         <div>
@@ -12,6 +16,10 @@ function CategoryCard({ category, setQuotes }) {
                     <div className="card-actions justify-end">
                         <button onClick={() => {
                             setQuotes(category.quotes)
+                            setTheme(category.name)
+                            
+                            
+
                         }} className="btn">Select</button>
                     </div>
                 </div>

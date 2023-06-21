@@ -26,7 +26,7 @@ function Nav() {
         <li><a>Photo Gallery</a></li>
       </ul>
     </div>
-    <a style={{fontSize:'1.5em'}} className="btn btn-ghost normal-case text-xl">Wald Cards</a>
+    <a style={{fontSize:'1.5em'}} className="btn btn-ghost normal-case text-xl"> Wald Cards</a>
   </div>
   <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

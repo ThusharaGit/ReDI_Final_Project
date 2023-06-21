@@ -3,9 +3,10 @@ import './pictures.css'
 import PrevNext from '../../components/PrevNext'
 import Roadmap from '../../components/Roadmap'
 import {useState} from 'react'
+import CardPrev from '../../components/CardPrev'
 
 
-function Pictures({data, wish, image, setImage}) {
+function Pictures({pictures, wish, image, setImage}) {
     const [pageNo,setPageNo] = useState(3)
     // const [image,setImage] = useState("")
 
@@ -16,21 +17,24 @@ function Pictures({data, wish, image, setImage}) {
             
                 <h1 className='pageHeadings'>Select The Picture</h1>
                 <h2 style={{marginTop:'20px'}} className="card-title">Preview</h2>
-                <div className='cardImagePrev' >
+                {/* <div className='cardImagePrev' >
                     <h1 style={{fontWeight:'bold', fontStyle:'italic'}}>{wish}</h1>
                     <div className='selectedPicDiv'  style={{backgroundImage: `url(${image})`}}></div>
 
-                </div>
+                </div> */}
+                <CardPrev wish= {wish} image= {image}/>
 
                 <h2 style={{marginTop:'20px'}} className="card-title">Select The Picture</h2>
-
+                <div className='allPictures'>
                 {
-                    data.photos.map(picture => <button onClick={() => {
+                    pictures && pictures.map(picture => <button onClick={() => {
                         setImage(picture)
                     }}
                     className='pictureDiv' style={{backgroundImage: `url(${picture})`}}>
                          </button> )   
                 }
+                </div>
+
 
                 
                 <Roadmap pageNo = {pageNo}/>

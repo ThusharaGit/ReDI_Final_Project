@@ -1,10 +1,12 @@
 import React from 'react'
 import Quote from './Quote'
 import { useState } from 'react'
+import CardPrev from './CardPrev'
 
-function CategoryQuotes({ quotes, setQuotes ,wish ,setWish }) {
+function CategoryQuotes({ quotes, setQuotes ,wish ,setWish, theme, }) {
 
      //const [wish, setWish] = useState("")
+     
 
     return (
         <div>
@@ -13,14 +15,12 @@ function CategoryQuotes({ quotes, setQuotes ,wish ,setWish }) {
 
                     <h2  className="card-title">Preview</h2>
 
-                    <div className='cardPrev'>
-                        <p style={{fontWeight:'bold',fontStyle:'italic'}}>{wish}</p>
-                    </div>
+                    <CardPrev wish= {wish}/>
 
                 </div>
 
                 <div className="quotesDivBody">
-                    <h2 className="card-title">Select The Quote</h2>
+                    <h2 className="card-title">Select The Quote for <span style={{color:'rgb(230, 51, 152)', fontWeight:'bold'}}>{`${theme}`}</span> Card</h2>
                     {
                         quotes.map(quote => <Quote quote={quote} setWish={setWish} />)
                     }

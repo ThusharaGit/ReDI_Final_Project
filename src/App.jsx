@@ -37,6 +37,9 @@ function App() {
 
   const [wish, setWish] = useState("")
   const [image,setImage] = useState("")
+  const [bcColour, setBcColour] = useState("")
+  const [textColour, setTextColour] = useState("")
+  const [message, setMessage] = useState("Your Message Shows Here")
 
   return (
     <div className="App min-h-screen">
@@ -49,8 +52,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/categories' element={<Categories categories={categories} wish={wish} setWish={setWish} theme= {theme} setTheme={setTheme}/>} />
         <Route path='/pictures' element={<Pictures pictures={pictures} wish={wish} image={image} setImage={setImage} />} />
-        <Route path='/colours' element={<Colours wish={wish} image={image} />} />
-        <Route path='/message' element={<Message />} />
+        <Route path='/colours' element={<Colours wish={wish} image={image} bcColour={bcColour} setBcColour={setBcColour} textColour={textColour} setTextColour={setTextColour}/>} />
+        <Route path='/message' element={<Message wish={wish} image={image} bcColour={bcColour} textColour={textColour} message={message} setMessage={setMessage}/>} />
         <Route path='/pay' element={<Pay />} />
         <Route path='/thankyou' element={<Thankyou />} />
 

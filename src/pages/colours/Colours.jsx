@@ -5,10 +5,10 @@ import Roadmap from '../../components/Roadmap'
 import { useState } from 'react'
 import CardPrev from '../../components/CardPrev'
 
-function Colours({ wish, image }) {
+function Colours({ wish, image, bcColour, setBcColour, textColour, setTextColour }) {
     const [pageNo, setPageNo] = useState(4)
-    const [bcColour, setBcColour] = useState("")
-    const [textColour, setTextColour] = useState("")
+    // const [bcColour, setBcColour] = useState("")
+    // const [textColour, setTextColour] = useState("")
 
     const prev = '/pictures'
     const next = '/message'

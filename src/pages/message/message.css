@@ -1,0 +1,35 @@
+.messagePrevDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    margin: auto;
+}
+.twoPagesPrevDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    
+
+}
+.messageForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+
+}

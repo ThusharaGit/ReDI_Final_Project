@@ -27,8 +27,8 @@ function Colours({ wish, image }) {
                 setBcColour(e.target.bcColour.value)
                 
             }} action="">
-            <input style={{border:'2px solid black'}} type="color" name="bcColour" id="" />
-            <button type="submit">Submit</button>
+            <input className='colourPallete'  type="color" name="bcColour" id="" />
+            <button className="colourCheck" type="submit"><ion-icon name="checkbox-outline"></ion-icon></button>
             </form>
             
 
@@ -39,8 +39,8 @@ function Colours({ wish, image }) {
                 e.preventDefault()
                 setTextColour(e.target.textColour.value)    
             }} action="">
-            <input style={{border:'2px solid black'}} type="color" name="textColour" id="" />
-            <button type="submit">Submit</button>
+            <input className='colourPallete' type="color" name="textColour" id="" />
+            <button className="colourCheck" type="submit"><ion-icon className='colourCheck' name="checkbox-outline"></ion-icon></button>
             </form>
 
 

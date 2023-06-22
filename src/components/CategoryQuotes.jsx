@@ -2,10 +2,12 @@ import React from 'react'
 import Quote from './Quote'
 import { useState } from 'react'
 import CardPrev from './CardPrev'
+import { Link } from 'react-router-dom'
 
 function CategoryQuotes({ quotes, setQuotes ,wish ,setWish, theme, }) {
 
      //const [wish, setWish] = useState("")
+     
      
 
     return (
@@ -13,14 +15,14 @@ function CategoryQuotes({ quotes, setQuotes ,wish ,setWish, theme, }) {
             <div className="cardQuotesDiv">
                 <div className='prevBox'>
 
-                    <h2  className="card-title">Preview</h2>
+                    <h2  className="quoteTitle">Preview</h2>
 
                     <CardPrev wish= {wish}/>
 
                 </div>
 
                 <div className="quotesDivBody">
-                    <h2 className="card-title">Select The Quote for <span style={{color:'rgb(230, 51, 152)', fontWeight:'bold'}}>{`${theme}`}</span> Card</h2>
+                    <h2 className=" quoteTitle">Select The Quote for {`${theme} `}Card</h2>
                     {
                         quotes.map(quote => <Quote quote={quote} setWish={setWish} />)
                     }
@@ -29,6 +31,7 @@ function CategoryQuotes({ quotes, setQuotes ,wish ,setWish, theme, }) {
                         <button onClick={() => {
                             setQuotes("")
                         }} className="btn btn-secondary">Back</button>
+                        <Link to= {'/pictures'}> <button className="btn btn-secondary">Next</button></Link>
                     </div>
                 </div>
             </div>

@@ -9,18 +9,17 @@ function CategoryCard({ category, setQuotes, setTheme }) {
 
     return (
         <div>
-            <div className={(category.id % 2 ? "card w-96 text-primary-content card bg-primary" : "card w-96 text-primary-content card bg-secondary")}>
+            <div className={(category.id % 2 ? " card text-primary-content bg-primary" : "  card text-primary-content  bg-secondary")}>
                 <div className="card-body">
-                    <h2 style={{ color: 'white', fontSize: '2em' }} className="card-title">{category.name}</h2>
-                    <p>{category.quotes[0]}</p>
-                    <div className="card-actions justify-end">
-                        <button onClick={() => {
+                     {/* <p style={{ fontSize: '0.1em' }}>{category.quotes[0]}</p>  */}
+                    <div style={{margin:'50px'}}>
+                        <button style={{fontSize:'1em',color:'white', textShadow:'2px 2px 5px grey'}} onClick={() => {
                             setQuotes(category.quotes)
                             setTheme(category.name)
                             
                             
 
-                        }} className="btn">Select</button>
+                        }} >{category.name}</button>
                     </div>
                 </div>
             </div>

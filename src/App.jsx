@@ -14,6 +14,7 @@ import Thankyou from './pages/thankyou/Thankyou';
 import { useState, useSyncExternalStore } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import Download from './pages/download/Download';
 
 
 
@@ -56,9 +57,8 @@ function App() {
         <Route path='/colours' element={<Colours wish={wish} image={image} bcColour={bcColour} setBcColour={setBcColour} textColour={textColour} setTextColour={setTextColour}/>} />
         <Route path='/message' element={<Message font={font} setFont={setFont} wish={wish} image={image} bcColour={bcColour} textColour={textColour} message={message} setMessage={setMessage}/>} />
         <Route path='/pay' element={<Pay />} />
+        <Route path='/download' element={ <Download wish={wish} image={image} bcColour={bcColour} textColour={textColour} font={font}/>} />
         <Route path='/thankyou' element={<Thankyou />} />
-
-
       </Routes>
 
 

@@ -18,16 +18,5 @@
     border: 3px solid rgb(178, 236, 239);
     
 }
-.colourCheck{
-    color: rgb(25, 149, 149);
-    font-size: 2em ;
-    margin-left:40px; 
-    
-    
-}
-.colourCheck:hover{
-    color: rgb(232, 40, 114);
-    box-shadow: 2px 2px 20px rgb(225, 224, 224);
-}
 
  

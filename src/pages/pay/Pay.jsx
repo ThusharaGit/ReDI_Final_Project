@@ -7,7 +7,7 @@ import {useState} from 'react'
 function Pay() {
     const [pageNo,setPageNo] = useState(6)
     const prev = '/message'
-    const next = '/thankyou'
+    const next = '/download'
   return (
     <div className='allPageLayout'>
         <h1 className='pageHeadings'>Preview Your Card</h1>

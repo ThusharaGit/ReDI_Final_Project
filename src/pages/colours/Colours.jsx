@@ -27,8 +27,11 @@ function Colours({ wish, image, bcColour, setBcColour, textColour, setTextColour
                 setBcColour(e.target.bcColour.value)
                 
             }} action="">
-            <input className='colourPallete'  type="color" name="bcColour" id="" />
-            <button className="colourCheck" type="submit"><ion-icon name="checkbox-outline"></ion-icon></button>
+            <input onChange={(e)=>{
+               e.preventDefault();
+               setBcColour(e.target.value)
+            }} className='colourPallete'  type="color" name="bcColour" id="" />
+            
             </form>
             
 
@@ -37,10 +40,14 @@ function Colours({ wish, image, bcColour, setBcColour, textColour, setTextColour
 
             <form onSubmit={(e) => {
                 e.preventDefault()
-                setTextColour(e.target.textColour.value)    
+                setTextColour(e.target.value)    
             }} action="">
-            <input className='colourPallete' type="color" name="textColour" id="" />
-            <button className="colourCheck" type="submit"><ion-icon className='colourCheck' name="checkbox-outline"></ion-icon></button>
+
+            <input onChange={(e)=>{
+               e.preventDefault();
+               setTextColour(e.target.value)
+            }} className='colourPallete' type="color" name="textColour" id="" />
+            
             </form>
 
 
@@ -51,3 +58,8 @@ function Colours({ wish, image, bcColour, setBcColour, textColour, setTextColour
 }
 
 export default Colours
+
+
+
+
+

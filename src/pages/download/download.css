@@ -1,0 +1,27 @@
+.printPages{
+    height: 150px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 2px 2px 20px rgb(179, 177, 177);
+    display: flex;
+    flex-direction: row;
+
+}
+.midLine {
+    height: 150px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: 150px;
+}
+.printPgSide{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}

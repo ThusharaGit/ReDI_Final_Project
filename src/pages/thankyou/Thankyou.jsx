@@ -6,8 +6,8 @@ import {useState} from 'react'
 
 
 function Thankyou() {
-  const [pageNo,setPageNo] = useState(7)
-    const prev = '/message'
+  const [pageNo,setPageNo] = useState(8)
+    const prev = '/download'
     const next = '/thankyou'
   return (
     <div>

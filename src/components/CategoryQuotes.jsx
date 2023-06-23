@@ -31,7 +31,7 @@ function CategoryQuotes({ quotes, setQuotes ,wish ,setWish, theme, }) {
                         <button onClick={() => {
                             setQuotes("")
                         }} className="btn btn-secondary">Back</button>
-                        <Link to= {'/pictures'}> <button className="btn btn-secondary">Next</button></Link>
+                        <Link to= {'/pictures'}> <button className="btn btn-primary">Next</button></Link>
                     </div>
                 </div>
             </div>

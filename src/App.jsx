@@ -11,7 +11,7 @@ import Colours from './pages/colours/Colours';
 import Message from './pages/message/Message';
 import Pay from './pages/pay/Pay';
 import Thankyou from './pages/thankyou/Thankyou';
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 
@@ -40,6 +40,7 @@ function App() {
   const [bcColour, setBcColour] = useState("")
   const [textColour, setTextColour] = useState("")
   const [message, setMessage] = useState("Your Message Shows Here")
+  const [font, setFont] = useState("Arial")
 
   return (
     <div className="App min-h-screen">
@@ -53,7 +54,7 @@ function App() {
         <Route path='/categories' element={<Categories categories={categories} wish={wish} setWish={setWish} theme= {theme} setTheme={setTheme}/>} />
         <Route path='/pictures' element={<Pictures pictures={pictures} wish={wish} image={image} setImage={setImage} />} />
         <Route path='/colours' element={<Colours wish={wish} image={image} bcColour={bcColour} setBcColour={setBcColour} textColour={textColour} setTextColour={setTextColour}/>} />
-        <Route path='/message' element={<Message wish={wish} image={image} bcColour={bcColour} textColour={textColour} message={message} setMessage={setMessage}/>} />
+        <Route path='/message' element={<Message font={font} setFont={setFont} wish={wish} image={image} bcColour={bcColour} textColour={textColour} message={message} setMessage={setMessage}/>} />
         <Route path='/pay' element={<Pay />} />
         <Route path='/thankyou' element={<Thankyou />} />
 

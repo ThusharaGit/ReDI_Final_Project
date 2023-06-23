@@ -1,4 +1,28 @@
+/* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Black+Ops+One&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Shantell+Sans&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Black+Ops+One&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Shantell+Sans&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Berkshire Swash', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Shantell+Sans&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Henny Penny', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Shantell+Sans&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Snowburst One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Shantell+Sans&family=Snowburst+One&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Bonbon', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Bonbon&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Rubik+Maze&family=Shantell+Sans&family=Snowburst+One&family=Stick+No+Bills&display=swap');
+
+/* font-family: 'Tapestry', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Bonbon&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Rubik+Maze&family=Shantell+Sans&family=Snowburst+One&family=Stick+No+Bills&family=Tapestry&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anuphan&family=Archivo:ital,wght@1,100&family=Barlow+Semi+Condensed:wght@300&family=Berkshire+Swash&family=Black+Ops+One&family=Bonbon&family=Henny+Penny&family=Inter:wght@700&family=Josefin+Sans&family=Kablammo&family=Lobster&family=Luckiest+Guy&family=Montserrat+Alternates&family=Open+Sans&family=Righteous&family=Roboto&family=Rubik+Maze&family=Shantell+Sans&family=Snowburst+One&family=Stick+No+Bills&family=Tapestry&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -40,6 +64,7 @@
 }
 
 .cardPrev {
+    
     height: 280px;
     width:280px;
     background-color: white;

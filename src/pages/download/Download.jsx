@@ -12,13 +12,18 @@ function Download({ wish, image, bcColour, textColour, font }) {
     return (
         <div className='allPageLayout'>
             <h1 className='pageHeadings'>Download Card</h1>
+            <h2 style={{ color: 'red' }}>Download Preview is not available in mobile and tablet devices.</h2>
 
             <div className='printPages printPage1' >
                 <div className='midLine'></div>
-                <div className='printPgSide printLeft1'></div>
+                <div>
+                <div className='printPgSide printLeft1'>
+                    <p style={{ fontSize: '1.5em', fontFamily: `${font}`, padding: '10px' }} >{wish}</p>
+                    <p>Hello</p>
+                </div>
                 <div className='printPgSide printRight1' >
-                    <p style={{fontSize:'0.5em', fontFamily:`${font}`, padding:'10px'}} >{wish}</p>
 
+                </div>
                 </div>
             </div>
 

@@ -1,13 +1,15 @@
-.printPages{
-    height: 150px;
-    width: 300px;
-    margin: 10px;
+.printPages {
+    height: 500px;
+    width: 1000px;
+    margin: 20px;
     position: relative;
     box-shadow: 2px 2px 20px rgb(179, 177, 177);
     display: flex;
     flex-direction: row;
+    display: none;
 
 }
+
 .midLine {
     height: 150px;
     width: 1px;
@@ -15,13 +17,47 @@
     position: absolute;
     left: 150px;
 }
-.printPgSide{
-    height: 150px;
-    width: 150px;
+
+.printPgSide {
+    height: 500px;
+    width: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
+    background-color: aqua;
 }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .printPages {
+        display: block;
+        
+    }
+
+    .printPgSide {
+        
+    }
+
+    .midLine {
+        height: 500px;
+        width: 2px;
+        left: 500px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

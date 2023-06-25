@@ -24,6 +24,7 @@ function Nav() {
           </ul>
         </li> */}
         <li><a>Photo Gallery</a></li>
+        <li><a>Login</a></li>
       </ul>
     </div>
     <a style={{fontSize:'1.5em'}} className="btn btn-ghost normal-case text-xl"> Wald Cards</a>
@@ -41,6 +42,7 @@ function Nav() {
         </details>
       </li>
       <li><a>Photo Gallery</a></li>
+      <li><a>Login</a></li>
     </ul>
   </div>
   <div className="navbar-end">

@@ -36,6 +36,14 @@
     justify-items: center;
     text-align: center;
 }
+.navLogo{
+    height: 60px;
+    width: 60px;
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/Rectangle_2.png?updatedAt=1687785530859);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .pageHeadings{
     font-size: 2em;

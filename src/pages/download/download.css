@@ -13,7 +13,6 @@
 .midLine {
     height: 150px;
     width: 1px;
-    background-color: black;
     position: absolute;
     left: 150px;
 }
@@ -22,12 +21,47 @@
     height: 500px;
     width: 500px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
-    background-color: aqua;
+   
+}
+.Page{
+    display: flex;
+    flex-direction: row;
+
+}
+.picDownload{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    height: 80px;
+    width: 100px;
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/Rectangle_2.png?updatedAt=1687433309121);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    
+.logoBox{
+    height: 430px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    justify-items: center;
+
+}
+.DownloadCompleteCard{
+    
 }
 
 

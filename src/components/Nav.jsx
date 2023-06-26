@@ -1,5 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,10 +25,12 @@ function Nav() {
           </ul>
         </li> */}
         <li><a>Photo Gallery</a></li>
-        <li><a>Login</a></li>
+        <li><Link to= {'/login'}><a>Login</a></Link></li>
       </ul>
     </div>
-    <a style={{fontSize:'1.5em'}} className="btn btn-ghost normal-case text-xl"> Wald Cards</a>
+    <div className='navLogo'></div>
+    <a style={{fontSize:'2em', fontFamily:'Henny Penny' }} className="btn btn-ghost normal-case text-xl"> Wald Cards</a>
+    
   </div>
   <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -42,7 +45,7 @@ function Nav() {
         </details>
       </li>
       <li><a>Photo Gallery</a></li>
-      <li><a>Login</a></li>
+      <li><Link to= {'/login'}><a>Login</a></Link></li>
     </ul>
   </div>
   <div className="navbar-end">

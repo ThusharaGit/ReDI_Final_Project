@@ -29,7 +29,7 @@ function Nav() {
       </ul>
     </div>
     <div className='navLogo'></div>
-    <a style={{fontSize:'2em', fontFamily:'Henny Penny' }} className="btn btn-ghost normal-case text-xl"> Wald Cards</a>
+    <h1 style={{fontSize:'2em', fontFamily:'Berkshire Swash',color:' rgb(69, 90, 32)', textShadow:'2px 2px 15px rgb(158, 209, 124)' }} className="btn btn-ghost normal-case text-xl"> Wald Cards</h1>
     
   </div>
   <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">

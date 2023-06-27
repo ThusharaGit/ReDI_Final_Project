@@ -11,12 +11,12 @@ function Home() {
 
   return (
     <div className='grow'>
-
+    
         <main>
         <div className="hero min-h-screen bg-base-200 mainBcGround">
           <div className="hero-content text-center">
             <div className="max-w-max-xl">
-              <div className='thumbNail'></div>
+               <div className='thumbNail'></div> 
               <h1 style={{marginTop:'1px'}}  className="text-5xl font-bold">Hello there</h1>
               <p className="py-6">Are you interested in greeting in a very special way to your loved ones? <br />
                 Here's an Idea for you.... <br />

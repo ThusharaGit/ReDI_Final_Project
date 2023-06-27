@@ -1,0 +1,35 @@
+.photos {
+   height: 250px;
+   width: 250px;
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: 40px;
+}
+
+#photo1{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/hash_set-ReDI.png?updatedAt=1687247201869);
+}
+#photo2{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/20230620_091644.jpg?updatedAt=1687245538817);
+}
+#photo3{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/logo.png?updatedAt=1686852734966);
+}
+#photo4{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/ReDIThumbnailMobile.png?updatedAt=1687772709703);
+}
+#photo5{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/picture_flower_boquet.png?updatedAt=1687109732754);
+}
+#photo6{
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/Rectangle_2.png?updatedAt=1687785530859);
+}
+.allPhotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}

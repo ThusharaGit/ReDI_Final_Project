@@ -18,7 +18,7 @@ function Thankyou() {
                 <ion-icon name="heart"></ion-icon>
                 <ion-icon name="heart"></ion-icon>
                 </div>
-        <h1 className='pageHeadings'>Thanks for Purchasing A Waldcard</h1>
+        <h1 className='pageHeadings'>Thanks for Purchasing A Waldcard.</h1>
 
         <div style={{color:'rgb(235, 97, 150)', fontSize:'2em', margin:'20px'}} >
                 <ion-icon name="heart"></ion-icon>

@@ -16,6 +16,8 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import Download from './pages/download/Download';
 import Login from './pages/login/Login';
+import About from './pages/about/About';
+import Photos from './pages/photos/Photos';
 
 
 
@@ -61,6 +63,9 @@ function App() {
         <Route path='/download' element={ <Download wish={wish} image={image} bcColour={bcColour} textColour={textColour} font={font} message={message}/>} />
         <Route path='/thankyou' element={<Thankyou />} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/photos' element={<Photos/>} />
+        
         
       </Routes>
 

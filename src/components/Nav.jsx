@@ -16,7 +16,7 @@ function Nav() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>About</a></li>
+        <li><Link to= {'/about'}><a>About</a></Link></li>
         {/* <li>
           <a>Contact</a>
           <ul className="p-2">
@@ -24,7 +24,7 @@ function Nav() {
             <li><a><ion-icon name="mail-outline"></ion-icon>:  abc.cd@gmail.com</a></li>
           </ul>
         </li> */}
-        <li><a>Photo Gallery</a></li>
+        <li><Link to= {'/photos'}><a>Photo Gallery</a></Link></li>
         <li><Link to= {'/login'}><a>Login</a></Link></li>
       </ul>
     </div>
@@ -34,7 +34,7 @@ function Nav() {
   </div>
   <div style={{zIndex:'10'}} className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>About</a></li>
+      <li><Link to= {'/about'}><a>About</a></Link></li>
       <li tabIndex={0}>
         <details>
           <summary>Contact</summary>
@@ -44,14 +44,14 @@ function Nav() {
           </ul>
         </details>
       </li>
-      <li><a>Photo Gallery</a></li>
+      <li><Link to= {'/photos'}><a>Photo Gallery</a></Link></li>
       <li><Link to= {'/login'}><a>Login</a></Link></li>
     </ul>
   </div>
   <div className="navbar-end">
     <button onClick={() => {
       navigate('/')
-    }} className="btn homeBtn"><ion-icon style= {{fontSize:'2em'}} name="home"></ion-icon></button>
+    }} className="btn homeBtn"><div className='leaf'></div></button>
   </div>
 </div>
 

@@ -1,0 +1,54 @@
+.aboutDiv{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.aboutPhoto{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://ik.imagekit.io/frd2fxkds6/Thushara.jpg?updatedAt=1687895689832);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 2px 2px 20px rgb(162, 160, 160);
+}
+.aboutDetails{
+   width: 300px; 
+   height: 450px;
+   box-shadow: 2px 2px 20px rgb(162, 160, 160);
+   border-radius: 20px;
+   margin: auto;
+   padding: 20px;
+   text-align: left;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .aboutPhoto{
+        height: 300px;
+        width: 300px;
+    } 
+    .aboutDiv{
+        flex-direction: row;    
+    } 
+    .aboutDetails{
+        width: 450px; 
+        height: 300px; 
+        margin: auto;
+     }  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

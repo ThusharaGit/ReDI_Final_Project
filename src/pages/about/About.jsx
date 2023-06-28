@@ -29,15 +29,21 @@ function About() {
 
        <h1 className='nameBoard'>My Projects</h1>
        <div className='projectDiv'>
+
        <a href='https://github.com/ThusharaGit/CakeFairyTestProjectRedI'>Cake Fairy</a>
        </div>
        <div className='projectDiv'>
        <a href='https://github.com/ThusharaGit/Travelbirdie'>Travel Birdie</a>
        </div>
-       
+       <div className='projectDiv'>
        <a href='https://github.com/ThusharaGit/Budget_app'>Budget App</a>
+       </div>
+       <div className='projectDiv'>
        <a href='https://github.com/ThusharaGit/WeatherApp'>Weather App</a>
+       </div>
+       <div className='projectDiv'>
        <a href='https://github.com/ThusharaGit/Portfolio'>Personal Portfolio</a>
+       </div>
 
       
       <Link to= {'/'}> <button style={{margin:'25px'}} className="btn btn-secondary">Home</button></Link>

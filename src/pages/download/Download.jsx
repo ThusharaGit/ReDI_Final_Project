@@ -19,7 +19,10 @@ function Download({ wish, image, bcColour, textColour, font, message }) {
 
     const generatePDF = () => {
 
-        const report = new JsPDF('landscape', 'px', 'a4');
+        const report = new JsPDF('landscape', 'px', [4000,2002]);
+        var img = new Image()
+img.src = `${image};base64`
+report.addImage(img, 'png', 0, 0, 12, 15)
         report.html(document.querySelector('#waldcard')).then(() => {
             report.save('WaldCard.pdf');
         });

@@ -10,7 +10,7 @@ function DownloadCard({ wish, image, bcColour, textColour, font, message }) {
     
     return (
        
-            <div className='DownloadCompleteCard'>
+            <div className='DownloadCompleteCard '>
                 <div style={{ backgroundColor: `${bcColour}` }} className='printPages printPage1' >
                     <div style={{ backgroundColor: `${textColour}` }} className='midLine'></div>
                     <div className='Page'>
